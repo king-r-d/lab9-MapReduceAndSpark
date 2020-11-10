@@ -1,6 +1,8 @@
 # lab9-MapReduceAndSpark
 
-# 95-702 Distributed Systems       Distributed Computation
+# 95-702 Distributed Systems       
+
+# Distributed Computation
 
 ## Part 1. HDFS and Mapreduce
 
