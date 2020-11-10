@@ -50,10 +50,11 @@ key, you may hit return to execute commands that you previously ran.
 
 1.  Log in to the Hadoop cluster by using SSH to connect.
 ```
-         ssh -l mm6 heinz-jumbo.heinz.cmu.local
+ssh -l mm6 heinz-jumbo.heinz.cmu.local
 ```
 
-Note: If this ssh fails, it may be a problem with your DNS configuration. Use an IP address instead of the name. Talk to your neighbor to ping the name to see the IP address.
+Note: If this ssh fails, it may be a problem with your DNS configuration. Use an IP address instead of the name. Ask a colleague to ping the name (heinz-jumbo.heinz.cmu.local) to see
+the IP address.
 
 You must change your password now. Use the "passwd" command. PLEASE remember this
 new password.
@@ -111,10 +112,10 @@ pico test
 Copy and paste this file into test. By "this file" we mean the document you
 are currently reading. Use ^o followed by ^x. The ^ symbol is the control key.
 
-^o  to write out the file to disk
-^x to exit pico
+^o  is used to write out the file to disk.
+^x is used to exit the pico editor.
 
-7.  Copy the directory where the input resides to HDFS. Note: This is a different file system.
+7.  Copy the directory where the input resides to HDFS. *** Note: This is a different file system.***
 
 ```
 cd ..
