@@ -68,9 +68,9 @@ new password.
 Your password requires a capital letter, a number and one of
 the following characters: !@#$%^&*()_-+=.
 
-Now, complete the 'assignment' that is on Canvas so that your password is available
-to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The assignment
-is called "Cluster Password".
+Now, complete the 'quiz' that is on Canvas so that your password is available
+to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz
+is called "Cluster Password Quiz".
 
 ### :checkered_flag: **Checkpoint:**  For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas. Show your TA.
 
