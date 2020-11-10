@@ -1,10 +1,12 @@
-# lab9-MapReduceAndSpark
+
 
 # 95-702 Distributed Systems       
 
-# Distributed Computation
+## lab9-MapReduceAndSpark
 
-## Part 1. HDFS and Mapreduce
+## Distributed Computation
+
+### Part 1. HDFS and Mapreduce
 
 The purpose of Part 1 is for the student to establish credentials
 on the Heinz College High Performance Computing Cluster and to run
@@ -184,7 +186,7 @@ the Job ID.
 	bin/hadoop job -kill job_201310251241_0754
 ```
 
-## Part 2. Apache Spark on IntelliJ
+### Part 2. Apache Spark on IntelliJ
 
 The file that you are currently reading is named "hadoop-lab.txt". We will
 be working with this file in the steps below.
