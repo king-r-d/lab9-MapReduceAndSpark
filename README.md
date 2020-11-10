@@ -115,7 +115,7 @@ are currently reading. Use ^o followed by ^x. The ^ symbol is the control key.
 ^o  is used to write out the file to disk.
 ^x is used to exit the pico editor.
 
-7.  Copy the directory where the input resides to HDFS. *** Note: This is a different file system.***
+7.  Copy the directory where the input resides to HDFS. ***Note: This is a different file system.***
 
 ```
 cd ..
