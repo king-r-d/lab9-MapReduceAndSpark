@@ -66,6 +66,8 @@ Now, complete the 'assignment' that is on Canvas so that your password is availa
 to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The assignment
 is called "Cluster Password".
 
+### :checkered_flag: **Checkpoint:**  For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas. Show your TA.
+
 2.  Your current directory is /home/mm6. Verify this with the "pwd" command.
 
 3.  Create a directory named "input" and one named "output" in your
@@ -163,7 +165,7 @@ cat ~/output/output
 
 14. How many time did the word 'you' appear in the file? ________
 
-### :checkered_flag: **Checkpoint:**  For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas.
+### :checkered_flag: For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas and have answers for 13. and 14.
 
 Part 1 Notes:
 
@@ -191,8 +193,11 @@ be working with this file in the steps below.
 Open Module Settings/Libraries/+/From Maven
 Enter org.apache.spark:spark-core_2.10:1.0.0
 
+```
+
 OK/Apply/OK
 
+```
 4. In the src directory, create a Java class named WordCounter.java in the package
 edu.cmu.andrew.userID.spark.example.java.wordcount.
 
