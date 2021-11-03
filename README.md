@@ -7,7 +7,6 @@
 ## lab9-MapReduceAndSpark
 
 
-
 ### Part 1. HDFS and Mapreduce
 
 The purpose of Part 1 is for the student to establish credentials
@@ -72,7 +71,9 @@ Now, complete the 'quiz' that is on Canvas so that your password is available
 to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz
 is called "Cluster Password Quiz".
 
+<!--
 ### :checkered_flag: **Checkpoint:**  For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas. Show your TA.
+-->
 
 2.  Your current directory is /home/mm6. Verify this with the "pwd" command.
 
@@ -171,8 +172,9 @@ cat ~/output/output
 
 14. How many time did the word 'you' appear in the file? ________
 
+<!--
 ### :checkered_flag: For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas and have answers for 13. and 14.
-
+-->
 Part 1 Notes:
 
 You may view what jobs are running on the cluster with the command:
@@ -264,4 +266,6 @@ hadoop-lab.txt and set the working directory to the directory holding hadoop-lab
 10. If you get a "file already exists exception", be sure to delete the output directory
 named "CountData" in your working directory.
 
+<!--
 ### :checkered_flag: For credit for this part, show your TA that you have a file called part-00000 and it lists a wordcount for this file.
+-->
