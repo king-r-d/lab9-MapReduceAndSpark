@@ -195,7 +195,7 @@ the Job ID.
 The file that you are currently reading is named "hadoop-lab.txt". We will
 be working with this file in the steps below.
 
-0. Open IntelliJ and select JDK 8 for the compiler.
+0. Open IntelliJ and select JDK 1.8 for the compiler.
 1. Create a command line Java project in IntelliJ.
 2. Name the project Spark-Example-Lab9.
 3. Right click the project and do the following to install the Spark library.
@@ -267,7 +267,7 @@ hadoop-lab.txt and set the working directory to the directory holding hadoop-lab
 10. If you get a "file already exists exception", be sure to delete the output directory
 named "CountData" in your working directory.
 
-11. If you receive strange errors, it may be the case that JDK 8 is required. JDK 8 needs to be downloaded and selected when you first run IntelliJ.
+11. If you receive strange errors, it may be the case that JDK 1.8 is required. JDK 8 needs to be downloaded and selected when you first run IntelliJ.
 
 <!--
 ### :checkered_flag: For credit for this part, show your TA that you have a file called part-00000 and it lists a wordcount for this file.
