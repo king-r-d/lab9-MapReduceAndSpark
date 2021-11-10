@@ -195,6 +195,7 @@ the Job ID.
 The file that you are currently reading is named "hadoop-lab.txt". We will
 be working with this file in the steps below.
 
+0. Open IntelliJ and select JDK 8 for the compiler.
 1. Create a command line Java project in IntelliJ.
 2. Name the project Spark-Example-Lab9.
 3. Right click the project and do the following to install the Spark library.
