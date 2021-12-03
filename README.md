@@ -6,7 +6,6 @@
 
 ## lab9-MapReduceAndSpark
 
-
 ### Part 1. HDFS and Mapreduce
 
 The purpose of Part 1 is for the student to establish credentials
@@ -27,6 +26,7 @@ If you number is 102 then your login ID is student102.
 Here are two links to examine what is going on on the cluster:
 
 http://heinz-jumbo.heinz.cmu.local:50030/
+
 http://heinz-jumbo.heinz.cmu.local:50070/
 
 Your initial password will be provided in lab.
