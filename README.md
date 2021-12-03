@@ -29,6 +29,15 @@ http://heinz-jumbo.heinz.cmu.local:50030/
 
 http://heinz-jumbo.heinz.cmu.local:50070/
 
+Output from System.out.println() statements is available in log files.  
+To view the log visit:
+
+http://heinz-jumbo.heinz.cmu.local:50030/jobtracker.jsp
+
+Find your completed job in the list. On the left, click on the job ID.
+Select the map or reduce task.
+Select the task number and then the task logs.
+
 Your initial password will be provided in lab.
 
 Before doing this lab, you will need to have the ability to run a secure
