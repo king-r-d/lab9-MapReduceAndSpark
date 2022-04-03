@@ -8,6 +8,10 @@
 
 ### Part 1. HDFS and Mapreduce
 
+There is no in-class lab this week due to CMU Carnival activities.
+The full one point for this lab is earned by entering your cluster-id
+password in the Canvas quiz.
+
 The purpose of Part 1 is for the student to establish credentials
 on the Heinz College High Performance Computing Cluster and to run
 a simple MapReduce job.
@@ -38,7 +42,7 @@ Find your completed job in the list. On the left, click on the job ID.
 Select the map or reduce task.
 Select the task number and then the task logs.
 
-Your initial password will be provided in lab.
+Your initial password will be provided in class.
 
 Before doing this lab, you will need to have the ability to run a secure
 shell. You may use putty or some other secure telnet client.
@@ -76,9 +80,8 @@ new password.
 Your password requires a capital letter, a number and one of
 the following characters: !@#$%^&*()_-+=.
 
-Now, complete the 'quiz' that is on Canvas so that your password is available
-to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz
-is called "Cluster Password Quiz".
+:checkered_flag:**Now, complete the 'quiz' that is on Canvas so that your password is available to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz is called "Cluster Password Quiz". By completing this quiz, you earn the full point for this lab.**
+
 
 <!--
 ### :checkered_flag: **Checkpoint:**  For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas. Show your TA.
@@ -278,6 +281,7 @@ named "CountData" in your working directory.
 
 11. If you receive strange errors, it may be the case that JDK 1.8 is required. JDK 8 needs to be downloaded and selected when you first run IntelliJ.
 
+It is important that you complete Part 2 of this lab before working on Project 5. We will not be collecting or grading Part 2 of this lab.
 <!--
 ### :checkered_flag: For credit for this part, show your TA that you have a file called part-00000 and it lists a wordcount for this file.
 -->
