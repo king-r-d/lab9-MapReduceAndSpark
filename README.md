@@ -6,11 +6,11 @@
 
 ## lab9-MapReduceAndSpark
 
-### Part 1. HDFS and Mapreduce
+### Part 1. HDFS and Mapreduce  Due Friday 11:59 PM, April 8, 2022
 
 There is no in-class lab this week due to CMU Carnival activities.
 The full one point for this lab is earned by entering your cluster-id
-password in the Canvas quiz.
+password in the Canvas quiz by the due date.
 
 The purpose of Part 1 is for the student to establish credentials
 on the Heinz College High Performance Computing Cluster and to run
