@@ -80,7 +80,7 @@ new password.
 Your password requires a capital letter, a number and one of
 the following characters: !@#$%^&*()_-+=.
 
-:checkered_flag:**Now, complete the 'quiz' that is on Canvas so that your password is available to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz is called "Cluster Password Quiz". By completing this quiz, you earn the full point for this lab.**
+:checkered_flag:**Now, complete the 'quiz' that is on Canvas so that your password is available to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz is called "Cluster Password Quiz". By completing this quiz by the deadline, you earn the full point for this lab.**
 
 
 <!--
