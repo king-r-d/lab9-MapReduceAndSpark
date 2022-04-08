@@ -6,7 +6,7 @@
 
 ## lab9-MapReduceAndSpark
 
-### Part 1. HDFS and Mapreduce  Due Friday 11:59 PM, April 8, 2022
+### Part 1. HDFS and Mapreduce  Due Monday 11:59 PM, April 11, 2022
 
 There is no in-class lab this week due to CMU Carnival activities.
 The full one point for this lab is earned by entering your cluster-id
