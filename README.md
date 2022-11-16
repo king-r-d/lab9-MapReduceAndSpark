@@ -6,9 +6,8 @@
 
 ## lab9-MapReduceAndSpark
 
-### Part 1. HDFS and Mapreduce  Due Monday 11:59 PM, April 11, 2022
+### Part 1. HDFS and MapReduce
 
-There is no in-class lab this week due to CMU Carnival activities.
 The full one point for this lab is earned by entering your cluster-id
 password in the Canvas quiz by the due date.
 
@@ -66,6 +65,8 @@ paste commands.
 Note that the tab key is useful for showing your command history. After using the tab
 key, you may hit return to execute commands that you previously ran.
 
+Note too that there is a Unix help sheet on Canvas. It is named "UNIX Commands Quick List".
+
 1.  Log in to the Hadoop cluster by using SSH to connect.
 ```
 ssh -l mm6 heinz-jumbo.heinz.cmu.local
@@ -80,12 +81,9 @@ new password.
 Your password requires a capital letter, a number and one of
 the following characters: !@#$%^&*()_-+=.
 
-:checkered_flag:**Now, complete the 'quiz' that is on Canvas so that your password is available to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz is called "Cluster Password Quiz". By completing this quiz by the deadline, you earn the full point for this lab.**
+:checkered_flag:**Now, complete the 'quiz' that is on Canvas so that your password is available to the TA's for the course. WE NEED THIS TO GRADE YOUR PROJECT 5. The quiz is called "Cluster Password Quiz". Show your TA. This is the 1/4 point checkpoint.**
 
-
-<!--
-### :checkered_flag: **Checkpoint:**  For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas. Show your TA.
--->
+It is highly suggested that you continue and do the following steps.
 
 2.  Your current directory is /home/mm6. Verify this with the "pwd" command.
 
@@ -150,7 +148,7 @@ hadoop dfs -copyFromLocal /home/mm6/input /user/mm6/input
 hadoop dfs -ls /user/mm6/input
 ```
 
-9. Run word count:
+9. Run word count using MapReduce:
 
 ```
 hadoop jar /usr/local/hadoop/hadoop-examples-*.jar wordcount /user/mm6/input  /user/mm6/output
@@ -184,48 +182,43 @@ cat ~/output/output
 
 14. How many time did the word 'you' appear in the file? ________
 
-<!--
-### :checkered_flag: For credit for this part of the lab, you must have your HDFS cluster password placed on Canvas and have answers for 13. and 14.
--->
-Part 1 Notes:
-
-You may view what jobs are running on the cluster with the command:
+15. You may view what jobs are running on the cluster with the command:
 
 ```
 	hadoop job -list
 ```
 
-Kill a job that is not making progress. Do this if you need to. You will need
+16. You can kill a job that is not making progress. Do this if you need to. You will need
 the Job ID.
 
 ```
 	bin/hadoop job -kill job_201310251241_0754
+
 ```
 
 ### Part 2. Apache Spark on IntelliJ
 
-The file that you are currently reading is named "hadoop-lab.txt". We will
-be working with this file in the steps below.
+For the Spark part of this lab, we have had more success running JDK 8 than JDK 17.
+JDK 17 has been tried several times with no luck.
 
-0. Open IntelliJ and select JDK 1.8 for the compiler.
-1. Create a command line Java project in IntelliJ.
-2. Name the project Spark-Example-Lab9.
-3. Right click the project and do the following to install the Spark library.
-Open Module Settings/Libraries/+/From Maven
-Enter org.apache.spark:spark-core_2.10:1.0.0
+Please download and install JDK 8 for the remainder of this lab.
+
+0. Run IntelliJ and select File New project
+1. Name the project Spark-Example-Lab9
+2. Choose Java as the language
+3. Choose Maven for the Build System
+4. Use JDK 8
+5. Right click the project and do the following to install the Spark library.
+   Open Module Settings/Libraries/+/From Maven
+   Enter org.apache.spark:spark-core_2.10:1.0.0
+   Select Download to the path provided
+   Select Transitive Dependencies
+   OK, OK, Apply, OK
+6. Drill down and right click the Java node and select new Java class
+7. Create a Java class named WordCounter.java with the following content:
+
 
 ```
-
-OK/Apply/OK
-
-```
-4. In the src directory, create a Java class named WordCounter.java in the package
-edu.cmu.andrew.userID.spark.example.java.wordcount.
-
-5. Copy the code below into WordCounter.java.
-
-```
-package edu.cmu.andrew.userID.spark.example.java.wordcount;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
@@ -263,25 +256,28 @@ public class WordCounter {
     }
 }
 ```
-6. We need to specify a file name as a command line parameter.
+
+8. We need a file to process. Right click the project node and select "New File".
+Give the file the name hadoop-lab.txt.
+
+9. Use the file that you are currently reading and copy it to hadoop-lab.txt.
+
+10. We need to specify the file name as a command line parameter.
 Select the project node. From the Run menu, select Edit Configurations.
 
-7. The main class is:
-edu.cmu.andrew.mm6.spark.example.java.wordcount.WordCounter
+11. You may need to "Add new run configuration...".
+   Choose "Application".
+   The main class is WordCounter.
+   Set the command line argument to the name of this file: hadoop-lab.txt
+   Set the working directory to the directory holding hadoop-lab.txt.
 
-Set the command line argument to the name of this file:
-hadoop-lab.txt and set the working directory to the directory holding hadoop-lab.txt.
+12. Compile and run the Java application.
 
-8. Compile and run the Java application.
+13. The output file will be in a directory named CountData in your working directory.
 
-9. The output file will be in a directory named CountData in your working directory.
+14. If you get a "file already exists exception", be sure to delete the output directory
+named "CountData" in your working directory. Spark does this so that a large output file is
+not accidentally erased.
 
-10. If you get a "file already exists exception", be sure to delete the output directory
-named "CountData" in your working directory.
 
-11. If you receive strange errors, it may be the case that JDK 1.8 is required. JDK 8 needs to be downloaded and selected when you first run IntelliJ.
-
-It is important that you complete Part 2 of this lab before working on Project 5. We will not be collecting or grading Part 2 of this lab.
-<!--
-### :checkered_flag: For credit for this part, show your TA that you have a file called part-00000 and it lists a wordcount for this file.
--->
+### :checkered_flag: For credit for this part (3/4 point), show your TA that you have a file called part-00000 and it lists a word count of this file.
