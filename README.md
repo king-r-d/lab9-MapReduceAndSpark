@@ -8,8 +8,7 @@
 
 ### Part 1. HDFS and MapReduce
 
-The full one point for this lab is earned by entering your cluster-id
-password in the Canvas quiz by the due date.
+
 
 The purpose of Part 1 is for the student to establish credentials
 on the Heinz College High Performance Computing Cluster and to run
