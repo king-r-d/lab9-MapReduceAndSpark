@@ -66,6 +66,8 @@ Note that the tab key is useful for showing your command history. After using th
 key, you may hit return to execute commands that you previously ran.
 
 Note too that there is a Unix help sheet on Canvas. It is named "UNIX Commands Quick List".
+Note too that we have provided a short linux tutorial. See Canvas and look for
+LinuxTutorial.mp4.
 
 1.  Log in to the Hadoop cluster by using SSH to connect.
 ```
