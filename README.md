@@ -8,8 +8,6 @@
 
 ### Part 1. HDFS and MapReduce
 
-
-
 The purpose of Part 1 is for the student to establish credentials
 on the Heinz College High Performance Computing Cluster and to run
 a simple MapReduce job.
@@ -75,6 +73,13 @@ ssh -l mm6 heinz-jumbo.heinz.cmu.local
 
 Note: If this ssh fails, it may be a problem with your DNS configuration. Use an IP address instead of the name. Ask a colleague to ping the name (heinz-jumbo.heinz.cmu.local) to see
 the IP address.
+
+On a MAC, if you receive the error message
+"No Matching Host Key Type Found"
+then try the following (replace mm6 with your own ID):
+```
+ssh -oHostKeyAlgorithms=+ssh-rsa mm6@172.19.10.29
+```
 
 You must change your password now. Use the "passwd" command. PLEASE remember this
 new password.
