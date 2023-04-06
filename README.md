@@ -215,7 +215,7 @@ Please download and install JDK 8 for the remainder of this lab.
 3. Choose Maven for the Build System
 4. Use JDK 8
 5. Right click the project and do the following to install the Spark library.
-   Open Module Settings/Libraries/+/From Maven
+   Open Project Structure/Libraries/+/From Maven
    Enter org.apache.spark:spark-core_2.10:1.0.0
    Select Download to the path provided
    Select Transitive Dependencies
@@ -276,6 +276,9 @@ Select the project node. From the Run menu, select Edit Configurations.
    The main class is WordCounter.
    Set the command line argument to the name of this file: hadoop-lab.txt
    Set the working directory to the directory holding hadoop-lab.txt.
+
+   The configuration's Build and Run should show java 8 SDK and the working
+   directory will provide a path to hadoop-lab.txt.
 
 12. Compile and run the Java application.
 
