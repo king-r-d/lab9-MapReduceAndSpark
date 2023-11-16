@@ -68,7 +68,7 @@ LinuxTutorial.mp4.
 
 1.  Log in to the Hadoop cluster by using SSH to connect.
 ```
-ssh -l mm6 heinz-jumbo.heinz.cmu.local
+ssh -l student049 heinz-jumbo.heinz.cmu.local
 ```
 
 Note: If this ssh fails, it may be a problem with your DNS configuration. Use an IP address instead of the name. Ask a colleague to ping the name (heinz-jumbo.heinz.cmu.local) to see
@@ -78,7 +78,7 @@ On a MAC, if you receive the error message
 "No Matching Host Key Type Found"
 then try the following (replace mm6 with your own ID):
 ```
-ssh -oHostKeyAlgorithms=+ssh-rsa mm6@172.19.10.29
+ssh -oHostKeyAlgorithms=+ssh-rsa student049@172.19.10.29
 ```
 
 You must change your password now. Use the "passwd" command. PLEASE remember this
@@ -91,10 +91,10 @@ the following characters: !@#$%^&*()_-+=.
 
 It is highly suggested that you continue and do the following steps.
 
-2.  Your current directory is /home/mm6. Verify this with the "pwd" command.
+2.  Your current directory is /home/student049. Verify this with the "pwd" command.
 
 3.  Create a directory named "input" and one named "output" in your
-    /home/mm6 directory.
+    /home/student049 directory.
 
 ```
 mkdir input
@@ -122,7 +122,7 @@ How did we use parallelization to compute Pi? See the course slides.
     to the cluster.
 
 6.  For now, simply construct a text file (pico or vi) and place it under your
-    /home/mm6/input directory.
+    /home/student049/input directory.
 
 ```
 cd input
@@ -144,20 +144,20 @@ are currently reading. Use ^o followed by ^x. The ^ symbol is the control key.
 
 ```
 cd ..
-hadoop dfs -copyFromLocal /home/mm6/input /user/mm6/input
+hadoop dfs -copyFromLocal /home/student049/input /user/student049/input
 
 ```
 
 8. Look in the HDFS input directory and see if test is there.
 
 ```
-hadoop dfs -ls /user/mm6/input
+hadoop dfs -ls /user/student049/input
 ```
 
 9. Run word count using MapReduce:
 
 ```
-hadoop jar /usr/local/hadoop/hadoop-examples-*.jar wordcount /user/mm6/input  /user/mm6/output
+hadoop jar /usr/local/hadoop/hadoop-examples-*.jar wordcount /user/student049/input  /user/student049/output
 
 ```
 Note: we are counting all of the words in all of the files in the input directory.
@@ -165,18 +165,18 @@ In this case, we only have one file, i.e., the file named 'test'.
 
 If you get an error then you may have to remove an old output directory with
 ```
-hadoop dfs -rmr /user/mm6/output
+hadoop dfs -rmr /user/student049/output
 ```
 
 And run word count again.
 
 10. See if the result files are there:
 ```
-hadoop dfs -ls /user/mm6/output
+hadoop dfs -ls /user/student049/output
 ```
-11. Place the results in the output folder in your /home/mm6/output directory.
+11. Place the results in the output folder in your /home/student049/output directory.
 ```
-hadoop dfs -getmerge /user/mm6/output ~/output/
+hadoop dfs -getmerge /user/student049/output ~/output/
 ```
 
 12. Examine the results:
